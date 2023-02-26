@@ -10,12 +10,16 @@
 header {
   background-color: lightgrey;
   height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 nav {
   /* border: 5px dotted #000; */
   /* width: min-content; */
   height: inherit;
+  width: inherit;
   display: flex;
   /* justify-content: start; */
   align-items: center;
@@ -26,6 +30,14 @@ nav > a {
   color: black;
   padding: 0 30px;
   font-size: 20px;
+}
+
+nav > a:hover {
+  color: red;
+}
+
+main {
+  margin-top: 50px;
 }
 
 .about_us {
@@ -106,4 +118,24 @@ margin: 20px auto;
 
 .choosed_element {
   border: 3px solid black;
+}
+
+.posts_block {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.posts_block h2 {
+  text-align: center;
+}
+
+.posts_block-container > * {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: aquamarine;
+}
+
+footer {
+  text-align: center;
 }
